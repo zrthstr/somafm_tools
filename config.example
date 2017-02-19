@@ -1,0 +1,8 @@
+; rename file to "config" wich is gitignored
+
+[DEFAULT]
+    consumer_key = eRbTQUeXr6ZEQ5jhwIw9bzrrU 
+    consumer_secret = abcdsecretsecretxzy 
+    access_token = 833045001034670080-lWPynrZSb6zWKT7oMemzhceMjLjY8aJ
+    access_token_secret = abcdalsosecretsecretxzy 
+
