@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#import os
+import sys
 import json
 import tweepy
 import requests
@@ -14,8 +16,10 @@ CONFIG_SECTION = "DEFAULT"
 def read_config_file():
     global consumer_key, consumer_secret, access_token, access_token_secret
 
+    config_file = sys.path[0] + "/" + CONFIG_FILE
+    print(test, config_file)
     config = configparser.ConfigParser() 
-    config.read(CONFIG_FILE)
+    config.read(config_file)
 
     consumer_key = config[CONFIG_SECTION]['consumer_key']
     consumer_secret = config[CONFIG_SECTION]['consumer_secret']
